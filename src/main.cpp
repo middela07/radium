@@ -14,6 +14,7 @@ int main() {
     motorControl.init();
     sensors.init();
 
+    motorControl.rotate(90); // Test rotation by 90 degrees
     while (true) {
         int sensorData[4];
         sensors.readSensors(sensorData);

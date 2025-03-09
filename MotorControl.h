@@ -9,6 +9,7 @@ public:
     void turnLeft();
     void turnRight();
     void stop();
+    void rotate(int angle); // Added method for rotation
 };
 
 #endif

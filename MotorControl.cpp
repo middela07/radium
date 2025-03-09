@@ -21,6 +21,14 @@ void MotorControl::turnRight() {
     std::cout << "Turning right\n";
 }
 
-void MotorControl::stop() {
-    std::cout << "Stopping motors\n";
+void MotorControl::rotate(int angle) {
+    if (angle > 0) {
+        std::cout << "Turning right by angle: " << angle << "\n";
+        turnRight(); // Call the method to turn right
+    } else if (angle < 0) {
+        std::cout << "Turning left by angle: " << -angle << "\n";
+        turnLeft(); // Call the method to turn left
+    } else {
+        std::cout << "No rotation needed\n";
+    }
 }
